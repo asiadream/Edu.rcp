@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Musicplayer
+Bundle-SymbolicName: kr.nextree.edu.musicplayer; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: kr.nextree.edu.musicplayer.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/basicplayer3.0.jar,
+ lib/commons-logging-1.1.jar,
+ lib/jflac-1.2.jar,
+ lib/jl1.0.jar,
+ lib/jmactritonusspi1.74.jar,
+ lib/jogg-0.0.7.jar,
+ lib/jorbis-0.0.15.jar,
+ lib/jspeex0.9.7.jar,
+ lib/kj_dsp1.1.jar,
+ lib/mp3spi1.9.4.jar,
+ lib/tritonus_share.jar,
+ lib/vorbisspi1.0.2.jar
