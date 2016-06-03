@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Sample Category"
+            id="kr.namoosori.HelloPlugin">
+      </category>
+      <view
+            name="HelloPlugin"
+            icon="icons/sample.gif"
+            category="kr.namoosori.HelloPlugin"
+            class="kr.namoosori.helloplugin.views.HelloPluginView"
+            id="kr.namoosori.helloplugin.views.HelloPluginView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+
+</plugin>
