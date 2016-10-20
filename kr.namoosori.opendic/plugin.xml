@@ -159,6 +159,51 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="kr.namoosori.opendic.menu"
+               label="OpenDic메뉴"
+               mnemonic="O">
+            <command
+                  commandId="kr.namoosori.opendic.commands.OpenOpenDicViewCommand"
+                  icon="icons/book_go.png"
+                  label="오픈딕View"
+                  mnemonic="V"
+                  style="push">
+            </command>
+            <command
+                  commandId="kr.namoosori.opendic.commands.OpenOpenDicDetailViewCommand"
+                  icon="icons/book_open.png"
+                  label="오픈딕Detail"
+                  mnemonic="D"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="kr.namoosori.opendic.toolbar"
+               label="OpenDic툴바">
+            <command
+                  commandId="kr.namoosori.opendic.commands.OpenOpenDicViewCommand"
+                  icon="icons/book_go.png"
+                  label="오픈딕"
+                  mode="FORCE_TEXT"
+                  style="push"
+                  tooltip="단어를 찾습니다.">
+            </command>
+            <command
+                  commandId="kr.namoosori.opendic.commands.OpenOpenDicDetailViewCommand"
+                  icon="icons/book_open.png"
+                  label="상세"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
             locationURI="menu:org.eclipse.ui.main.menu?after=kr.namoosori.opendicapplication.File">
          <menu
                label="Open">
